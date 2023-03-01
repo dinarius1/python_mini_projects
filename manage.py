@@ -4,7 +4,7 @@
 # update - обновлять
 # delete - удаление
 
-from products import create, read  #по названию файла ищет нужный файл
+from products import create, read, delete, update  #по названию файла ищет нужный файл
 
 while True:
     oper = input('c/r/d/u: ')
@@ -12,3 +12,7 @@ while True:
         create()
     elif oper == 'r':
         read()
+    elif oper == 'u':
+        update()
+    elif oper == 'd':
+        delete()
